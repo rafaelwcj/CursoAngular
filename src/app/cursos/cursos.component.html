@@ -1,0 +1,87 @@
+<!-- <p>cursos works!</p>
+
+<p>
+    Lista de cursos do portal {{ nomePortal }}
+</p>
+
+<app-cursos-detalhe></app-cursos-detalhe> -->
+
+<article>
+    <h3>Input/Output Properties</h3>
+    <app-output-property [valor]="valorInicial"
+    (mudouValor)="onMudouValor($event)"></app-output-property>
+</article>
+
+<!-- <article>
+    <h3>Input/Output Properties</h3>
+    <app-input-property [nome]="nomeDoCurso"></app-input-property>
+</article> -->
+
+<!-- <ul>
+    <li *ngFor="let curso of cursos">
+        {{ curso }}
+    </li>
+</ul>
+
+<p>
+    Valor é {{ getValor() }}
+</p>
+
+<article>
+    <h3>Class e Style Binding</h3>
+    <div>
+        Selecione uma classe
+        <select #classe (change)="0">
+            <option value="alert-success">Sucesso</option>
+            <option value="alert-info">Info</option>
+            <option value="alert-danger">Alerta</option>
+            <option value="alert-warning">Erro</option>
+        </select>
+        <br><br>
+
+<div class="alert {{ classe.value }}" role="alert">
+    Texto colorido conforme valor do comboobx.
+</div>
+
+    <div class="alert" role="alert" 
+        [class.alert-success]="classe.value == 'alert-success'">Sucesso</div>
+    <div class="alert" role="alert"
+        [class.alert-info]="classe.value == 'alert-info'">Info</div>
+    <div class="alert" role="alert"
+        [class.alert-danger]="classe.value == 'alert-danger'">Alerta</div>
+    <div class="alert alert-warning" role="alert"
+        [style.display]="classe.value == 'alert-warning' ? 'block' : 'none'">Erro</div> 
+
+    </div>
+</article>
+
+<article>
+    <h3>Event Binding</h3>
+    <div>
+        <button (click)="botaoClicado()"
+            class="btn btn-primary">
+            Me clique!
+        </button>
+       <br>
+        <input type="text" 
+            (keyup)="onKeyUp($event)"
+            (keyup.enter)="salvarValor(campoInput.value)"
+            (blur)="salvarValor(campoInput.value)"
+             #campoInput  />
+
+    <p> Valor atual: {{ valorAtual }}</p>
+    <p> Valor salvo: {{ valorSalvo }}</p>
+
+    <br>
+
+    <span (mouseover)="onMouseOverOut()"
+         (mouseout)="onMouseOverOut()"
+         [class.hightlight]="isMouseOver">
+        Passe o mouse sobre mim
+    </span>
+         
+
+    </div>
+</article> 
+
+ -->
